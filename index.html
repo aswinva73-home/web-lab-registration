@@ -8,8 +8,8 @@
       p = document.getElementById('pswd').value, cp = document.getElementById('cpswd').value;
        if (!name) { alert('Please enter your name');
         return } if (!user) { alert('Please enter a username');
-         return } if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { alert('Please enter a valid email address');
-          return } if (!p || !cp) { alert('Please enter your password'); return } if (p !== cp) { alert('Password does not match');
+         return } if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))  { alert('Please enter a valid email address');
+          return } if (!p || !cp || p.length < 6) { alert('Please enter a valid password (at least 6 characters)'); return } if (p !== cp) { alert('Password does not match');
            return } alert('Registration successful') }</script>
 </head>
 
